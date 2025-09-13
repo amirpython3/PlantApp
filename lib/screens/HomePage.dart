@@ -99,7 +99,28 @@ class _HomePageState extends State<HomePage> {
                 shape: BoxShape.circle,
                 color: Constans.primerycolor,
               ),
-              child: Icon(Icons.arrow_forward_ios, color: Colors.white),
+              child: IconButton(
+                icon: Icon(Icons.arrow_forward_ios),
+                color: Colors.white,
+                onPressed: () {
+                  setState(() {
+                    if (currentindex < 2) {
+                      currentindex++;
+                      if (currentindex < 3) {
+                        _pageController.nextPage(
+                          duration: Duration(milliseconds: 300),
+                          curve: Curves.linear,
+                        );
+                      }
+                    } else {
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => Loginpage()),
+                      );
+                    }
+                  });
+                },
+              ),
             ),
           ),
         ],
