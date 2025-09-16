@@ -75,6 +75,8 @@ flutter:
     - assets/images/PriceUnit-green.png
     - assets/images/profile.jpg
     - assets/images/verified.png
+    - assets/images/cartoonplant.png
+    - assets/images/plantbackgarnd.jpg
   
 
   # An image asset can refer to one or more resolution-specific "variants", see
