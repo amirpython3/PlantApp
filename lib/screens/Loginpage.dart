@@ -71,7 +71,7 @@ class _LoginpageState extends State<Loginpage> with TickerProviderStateMixin {
                       borderRadius: BorderRadius.circular(30),
                       border: Border.all(
                         color: Colors.white.withOpacity(0.2),
-                        width: 1.5,
+                        width: 1.6,
                       ),
                       boxShadow: [
                         BoxShadow(
@@ -166,7 +166,7 @@ class _LoginpageState extends State<Loginpage> with TickerProviderStateMixin {
                             ),
                           ),
                         ),
-                        // ✅ تصویر تزئینی — زیر دکمه و داخل کارت
+
                         const SizedBox(height: 30),
                         SizedBox(
                           height: 250,
